@@ -2,7 +2,7 @@
 
 # Project Name
 
-> This Project is a the welcome Page of a Portfolio webpage on Mobile .
+> This Project is the welcome Page of a my persnonal Portfolio webpage on mobile devices .
 
 
 It contains a header element (Toolbar) and a main section as well as a footer.
