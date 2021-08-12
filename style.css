@@ -5,13 +5,13 @@
 }
 
 .logo {
-  font-family:'inter';
-  font-style: normal ;
+  font-family: 'inter';
+  font-style: normal;
   font-size: 25px;
   font-weight: 600;
   line-height: 28px;
   text-align: left;
-  color:#28352F ;
+  color: #28352f;
 }
 
 .container2 {
@@ -28,14 +28,14 @@
   line-height: 52px;
   text-align: center;
   margin-top: 20px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .presentation {
   font-family: 'inter';
   font-style: normal;
   font-size: 20px;
-  color: #172B4D;
+  color: #172b4d;
   font-weight: normal;
   line-height: 28px;
   letter-spacing: 0;
@@ -43,9 +43,10 @@
   margin-top: 50px;
 }
 
-span{
-  color:rgb(94, 139, 94);
+span {
+  color: rgb(94, 139, 94);
 }
+
 .container1 {
   justify-content: space-between;
   display: flex;
@@ -67,14 +68,13 @@ span{
 }
 
 .connect {
-list-style-type: none;
-padding-top: 70px;
-display:flex;
-align-items:center;
-justify-content:center;
+  list-style-type: none;
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.media{
-  padding:10px;
+.media {
+  padding: 10px;
 }
-
