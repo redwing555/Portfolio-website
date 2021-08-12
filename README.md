@@ -2,58 +2,33 @@
 
 # Project Name
 
-> One paragraph statement about the project.
+> This Project is a the welcome Page of a Portfolio webpage on Mobile .
 
-![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+It contains a header element (Toolbar) and a main section as well as a footer.
 
 ## Built With
 
-- Major languages
+- HTML , CSS
 - Frameworks
-- Technologies used
+- Github, Git actions, vscode studio.
 
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **HICHAMI Houssam**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- GitHub: [@githubhandle](https://github.com/redwing555)
+- Twitter: [@twitterhandle](https://twitter.com/Houssam07964199)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 👤 **Author2**
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/houssam-hichami-a0aab7175/)
 
 ## 🤝 Contributing
 
