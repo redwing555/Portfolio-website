@@ -24,12 +24,6 @@ It contains a header element (Toolbar) and a main section as well as a footer.
 - Twitter: [@twitterhandle](https://twitter.com/Houssam07964199)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/houssam-hichami-a0aab7175/)
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
