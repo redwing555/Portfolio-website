@@ -5,12 +5,13 @@
 }
 
 .logo {
-  font-family: sans-serif;
-  font-style: normal;
+  font-family:'inter';
+  font-style: normal ;
   font-size: 25px;
   font-weight: 600;
   line-height: 28px;
   text-align: left;
+  color:#28352F ;
 }
 
 .container2 {
@@ -20,27 +21,33 @@
 }
 
 .greeting {
-  font-family: sans-serif;
+  font-family: 'inter';
   font-style: normal;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 52px;
   text-align: center;
   margin-top: 20px;
+  color: #172B4D;
 }
 
 .presentation {
-  font-family: sans-serif;
+  font-family: 'inter';
   font-style: normal;
   font-size: 20px;
-  font-weight: 400;
+  color: #172B4D;
+  font-weight: normal;
   line-height: 28px;
   letter-spacing: 0;
   text-align: center;
   margin-top: 50px;
 }
 
+span{
+  color:rgb(94, 139, 94);
+}
 .container1 {
+  justify-content: space-between;
   display: flex;
   list-style-type: none;
   overflow: hidden;
@@ -59,10 +66,15 @@
   margin-left: 2%;
 }
 
-footer {
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  overflow: hidden;
-  margin-left: 60px;
+.connect {
+list-style-type: none;
+padding-top: 70px;
+display:flex;
+align-items:center;
+justify-content:center;
 }
+
+.media{
+  padding:10px;
+}
+
