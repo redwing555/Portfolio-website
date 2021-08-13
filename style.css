@@ -4,6 +4,11 @@
   background-repeat: no-repeat;
 }
 
+main {
+  text-align: center;
+  margin: auto;
+}
+
 .logo {
   font-family: "inter", sans-serif;
   font-style: normal;
@@ -95,7 +100,7 @@ span {
 }
 
 .scroll-down {
-  margin-left: 140px;
+  margin-left: auto;
   text-align: center;
   border-width: 0.01em;
   background: white;
@@ -109,12 +114,7 @@ span {
   margin-bottom: 20px;
 }
 
-.container3,
-.container4,
-.container5,
-.container6,
-.container7,
-.container8 {
+.container3 {
   display: flex;
   width: 290px;
   margin-right: 0.5px;
@@ -126,6 +126,10 @@ span {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   border-style: solid;
+}
+
+.cnt {
+  display: inline-block;
 }
 
 .item3,
@@ -152,12 +156,14 @@ span {
 
 .see-project:hover {
   transition: background-color 0.5s;
-  background-color: green;
+  background-color: #36b37f;
   opacity: 0.9;
   cursor: pointer;
 }
 
 .container9 {
+  margin: auto;
+  align-content: center;
   display: flex;
   width: 290px;
   flex-direction: column;
@@ -314,7 +320,7 @@ ul#btn9 {
 
 .resume:hover {
   transition: background-color 0.5s;
-  background-color: green;
+  background-color: #36b37f;
   opacity: 0.9;
   cursor: pointer;
 }
