@@ -253,6 +253,12 @@ ul#btn6 {
   margin-right: 25px;
 }
 
+#btn1 li {
+
+  float:left;
+
+}
+
 .languages {
   flex-grow: 2;
   height: 40px;
