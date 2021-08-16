@@ -2,10 +2,9 @@
 
 # Project Name
 
-> This Project is the welcome Page of my persnonal Portfolio webpage on mobile devices .
+> This Project is the welcome Page projects pages as well as the about me page of my persnonal Portfolio on mobile devices .
 
 
-It contains a header element (Toolbar) and a main section as well as a footer.
 
 ## Built With
 
@@ -34,11 +33,6 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
