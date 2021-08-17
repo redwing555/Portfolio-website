@@ -79,7 +79,6 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .media {
@@ -360,8 +359,6 @@ input#mail {
   width: 250px;
 }
 
-
-
 ::placeholder {
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -394,7 +391,7 @@ footer {
   background-image: url("img/background3.png");
   background-repeat: no-repeat;
   background-position: right 65%;
-  background-size:auto;
+  background-size: auto;
   text-align: center;
   margin: auto;
 }
