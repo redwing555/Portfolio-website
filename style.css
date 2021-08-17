@@ -1,6 +1,7 @@
 .background {
   background-image: url("img/background.png");
   background-size: contain;
+  background-position: 0% 5%;
   background-repeat: no-repeat;
 }
 
@@ -78,13 +79,14 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .media {
   padding: 10px;
 }
 
-#twitter {
+#twitter1 {
   margin-top: 15px;
 }
 
@@ -100,7 +102,7 @@ span {
 }
 
 .scroll-down {
-  margin-left: auto;
+  margin: auto;
   text-align: center;
   border-width: 0.01em;
   background: white;
@@ -234,6 +236,10 @@ span {
   border-radius: 8px;
 }
 
+footer div {
+  margin-bottom: 100px;
+}
+
 .coding-languages > div,
 .frameworks > div,
 .skills > div {
@@ -254,9 +260,7 @@ ul#btn6 {
 }
 
 #btn1 li {
-
-  float:left;
-
+  float: left;
 }
 
 .languages {
@@ -338,27 +342,90 @@ ul#btn9 {
   align-content: center;
 }
 
-
 ul#form {
-
   list-style-type: none;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin: auto;
+}
 
+input#name,
+input#mail {
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: auto;
+  width: 250px;
 }
 
 
 
+::placeholder {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: #6b778c;
+}
 
+textarea#msg {
+  border: 1px solid #60c095;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 250px;
+}
 
-form h4{
+form h4 {
   font-family: "inter", sans-serif;
   font-style: normal;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
-  line-height: 45px;
+  line-height: 35px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
   color: #172b4d;
+}
 
+footer {
+  background-image: url("img/background3.png");
+  background-repeat: no-repeat;
+  background-position: right 65%;
+  background-size:auto;
+  text-align: center;
+  margin: auto;
+}
+
+.getintouch {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-size: medium;
+  text-align: center;
+  color: white;
+  height: 45px;
+  width: 120px;
+  background: #36b37f;
+  border-radius: 4px;
+  border-style: none;
+  margin-top: 10px;
+}
+
+.getintouch:hover {
+  transition: background-color 0.5s;
+  background-color: #36b37f;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+#twitter2 {
+  margin-top: 15px;
+}
+
+.email {
+  text-align: center;
+  margin-left: 20px;
+  color: #42526e;
 }
