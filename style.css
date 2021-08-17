@@ -186,7 +186,7 @@ span {
   background-repeat: no-repeat;
 }
 
-.resume {
+/* .resume {
   font-family: "inter", sans-serif;
   font-style: normal;
   font-size: medium;
@@ -197,7 +197,7 @@ span {
   background: #36b37f;
   border-radius: 4px;
   border-style: none;
-}
+} */
 
 .about {
   font-family: Inter, sans-serif;
@@ -262,6 +262,19 @@ ul#btn6 {
   float: left;
 }
 
+.btn-btn {
+  font-family: "inter", sans-serif;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  background: #36b37f;
+  color: white;
+  border-radius: 4px;
+}
 .languages {
   flex-grow: 2;
   height: 40px;
@@ -396,7 +409,7 @@ footer {
   margin: auto;
 }
 
-.getintouch {
+/* .getintouch {
   font-family: "inter", sans-serif;
   font-style: normal;
   font-size: medium;
@@ -408,7 +421,7 @@ footer {
   border-radius: 4px;
   border-style: none;
   margin-top: 10px;
-}
+} */
 
 .getintouch:hover {
   transition: background-color 0.5s;
