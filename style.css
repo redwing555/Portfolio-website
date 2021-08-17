@@ -337,3 +337,28 @@ ul#btn9 {
   justify-content: center;
   align-content: center;
 }
+
+
+ul#form {
+
+  list-style-type: none;
+  display: flex;
+
+}
+
+
+
+
+
+form h4{
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 45px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #172b4d;
+
+}
