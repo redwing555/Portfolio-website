@@ -1,13 +1,20 @@
+
+*{
+  outline: solid 1px red;
+}
 .background {
   background-image: url("img/background.png");
   background-size: contain;
-  background-position: 0% 5%;
+  background-position: 0% 103%;
   background-repeat: no-repeat;
 }
 
-main {
+
+body {
   text-align: center;
-  margin: auto;
+  padding: 0 0;
+  margin: 0 0;
+  
 }
 
 .logo {
@@ -18,6 +25,10 @@ main {
   line-height: 28px;
   text-align: left;
   color: #28352f;
+}
+
+a{
+  text-decoration: none;
 }
 
 .container2 {
@@ -53,14 +64,15 @@ span {
   color: rgb(94, 139, 94);
 }
 
-.container1 {
-  justify-content: space-between;
+.menu {
+  justify-content: space-around;
   display: flex;
   list-style-type: none;
   overflow: hidden;
+  
 }
 
-.item {
+/*.item {
   height: 100px;
   width: 100px;
 }
@@ -72,9 +84,43 @@ span {
 .item + .item {
   margin-left: 2%;
 }
+*/
+.hamburger {
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background:none;
+
+}
+
+.hide_mobile{
+  display: none;
+  
+}
+
+.hide_mobile li {
+
+  list-style-type: none;
+  margin: 0 0.5rem;
+
+}
+
+.hide_mobile li a{
+
+  color: black;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  text-decoration: none;
+
+}
+
+
 
 .connect {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   padding-top: 70px;
   display: flex;
   align-items: center;
@@ -83,11 +129,9 @@ span {
 
 .media {
   padding: 10px;
+  margin-top: auto;
 }
 
-#twitter1 {
-  margin-top: 15px;
-}
 
 .recent-works {
   font-family: "inter", sans-serif;
@@ -117,16 +161,23 @@ span {
 
 .container3 {
   display: flex;
-  width: 290px;
-  margin-right: 0.5px;
+  width: 95%;
+  margin: auto;
   flex-direction: column;
   align-items: center;
-  margin-left: auto;
+  /*margin-left: auto;*/
   text-align: center;
   background: white;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   border-style: solid;
+}
+
+.projectimg{
+
+  max-width:100%;
+  max-height:100%;
+
 }
 
 .cnt {
@@ -139,6 +190,7 @@ span {
 .item6,
 .item7,
 .item8 {
+  object-fit: cover;
   margin-bottom: 30px;
 }
 
@@ -163,13 +215,12 @@ span {
 }
 
 .container9 {
-  margin: auto;
-  align-content: center;
+  
   display: flex;
-  width: 290px;
+  width: 100%;
   flex-direction: column;
   align-items: center;
-  margin-left: auto;
+  /*margin-left: auto;*/
   text-align: center;
   background: white;
   border-style: none;
@@ -186,18 +237,6 @@ span {
   background-repeat: no-repeat;
 }
 
-/* .resume {
-  font-family: "inter", sans-serif;
-  font-style: normal;
-  font-size: medium;
-  text-align: center;
-  color: white;
-  height: 45px;
-  width: 159px;
-  background: #36b37f;
-  border-radius: 4px;
-  border-style: none;
-} */
 
 .about {
   font-family: Inter, sans-serif;
@@ -207,6 +246,17 @@ span {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
+}
+
+.about h2{
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;
+
 }
 
 .description {
@@ -223,9 +273,8 @@ span {
 .coding-languages,
 .frameworks,
 .skills {
-  margin-right: 10px;
   display: flex;
-  width: 290px;
+  margin: 0.5rem;
   height: 352px;
   flex-direction: column;
   align-items: center;
@@ -235,9 +284,7 @@ span {
   border-radius: 8px;
 }
 
-footer div {
-  margin-bottom: 100px;
-}
+
 
 .coding-languages > div,
 .frameworks > div,
@@ -295,10 +342,9 @@ ul#btn6 {
   margin-left: 3px;
 }
 
-.technologies {
+/*.technologies {
   color: #36b37e;
   height: 40px;
-  width: 60px;
   border-style: none;
   border-radius: 6px;
   font-family: "Inter", sans-serif;
@@ -306,22 +352,43 @@ ul#btn6 {
   font-weight: 600;
   font-size: 10px;
   background-color: white;
-  margin: 5px;
-}
+  display: inline-block;
+  text-align: center;
 
-.technologies + .technologies {
-  margin-left: 10%;
-  margin-left: 10px;
-}
+}*/
 
-ul#btn7,
-ul#btn8,
-ul#btn9 {
+.btn-new{
+
   list-style-type: none;
+  padding: 0;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem ;
+  
 }
+
+.btn-new li{
+  background-color: white;  
+  margin: 0.3rem;
+  outline: none;
+  border: none;
+  border-radius: 10px ;
+  padding: 0.7rem 1.2rem;
+}
+
+.btn-new li a{
+
+  color: #36B37E;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
 
 .lang-icon {
   width: 80px;
@@ -349,19 +416,38 @@ ul#btn9 {
 }
 
 .wrapper {
+ 
   display: grid;
   gap: 10px;
-  justify-content: center;
-  align-content: center;
+  place-items: center;
+
 }
 
-ul#form {
-  list-style-type: none;
+
+.container10{
+
+  
   display: flex;
+  width: 100%;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: stretch;
-  margin: auto;
+  align-content: center;
+  background: white;
+  border-style: none;
+  
+
+}
+
+#form  {
+  list-style-type: none;
+  padding: 0;
+  flex-direction: column;*/
+  align-content: center;
+  
+}
+
+#form li{
+  margin-top: 1.2rem ;
+  margin-right: 1rem;
 }
 
 input#name,
@@ -369,7 +455,7 @@ input#mail {
   border: 1px solid #d0d9d4;
   box-sizing: border-box;
   border-radius: 4px;
-  height: auto;
+  height: 2rem;
   width: 250px;
 }
 
@@ -390,24 +476,25 @@ textarea#msg {
 }
 
 form h4 {
+  padding-top: 10px;
   font-family: "inter", sans-serif;
+  font-size: 40px;
   font-style: normal;
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 35px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  color: #172b4d;
+  
 }
 
 footer {
   background-image: url("img/background3.png");
   background-repeat: no-repeat;
   background-position: right 65%;
-  background-size: auto;
-  text-align: center;
-  margin: auto;
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
 }
 
 /* .getintouch {
@@ -431,8 +518,12 @@ footer {
   cursor: pointer;
 }
 
+
 #twitter2 {
   margin-top: 15px;
+}
+.contact{
+ align-items: center;
 }
 
 .email {
@@ -440,3 +531,25 @@ footer {
   margin-left: 20px;
   color: #42526e;
 }
+
+@media (min-width:600px) { 
+
+  .background{
+
+  background-image: url("img/background_desktop.png");
+  background-position: 0% 0% ;
+
+  }
+
+  .hide_mobile{
+    display: flex;
+
+  }
+
+  .hamburger{
+    display: none;
+  }
+}
+
+
+
