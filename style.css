@@ -1,20 +1,19 @@
 
-*{
+* {
   outline: solid 1px red;
 }
+
 .background {
   background-image: url("img/background.png");
   background-size: contain;
-  background-position: 0% 103%;
+  background-position: center;
   background-repeat: no-repeat;
 }
-
 
 body {
   text-align: center;
   padding: 0 0;
   margin: 0 0;
-  
 }
 
 .logo {
@@ -27,7 +26,7 @@ body {
   color: #28352f;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -52,7 +51,7 @@ a{
   font-family: "inter", sans-serif;
   font-style: normal;
   font-size: 20px;
-  color: #172b4d;
+  color: #464b53;
   font-weight: normal;
   line-height: 28px;
   letter-spacing: 0;
@@ -69,53 +68,30 @@ span {
   display: flex;
   list-style-type: none;
   overflow: hidden;
-  
 }
 
-/*.item {
-  height: 100px;
-  width: 100px;
-}
-
-.item-center {
-  flex-grow: 1;
-}
-
-.item + .item {
-  margin-left: 2%;
-}
-*/
 .hamburger {
-
   outline: none;
   border: none;
   cursor: pointer;
-  background:none;
-
+  background: none;
 }
 
-.hide_mobile{
+.hide_mobile {
   display: none;
-  
 }
 
 .hide_mobile li {
-
   list-style-type: none;
   margin: 0 0.5rem;
-
 }
 
-.hide_mobile li a{
-
+.hide_mobile li a {
   color: black;
   font-size: 1rem;
   margin: 0 0.5rem;
   text-decoration: none;
-
 }
-
-
 
 .connect {
   list-style-type: none;
@@ -132,10 +108,9 @@ span {
   margin-top: auto;
 }
 
-
 .recent-works {
   font-family: "inter", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 52px;
@@ -162,10 +137,10 @@ span {
 .container3 {
   display: flex;
   width: 95%;
-  margin: auto;
+  margin: 0;
   flex-direction: column;
   align-items: center;
-  /*margin-left: auto;*/
+  margin-left: 0.4rem;
   text-align: center;
   background: white;
   border: 1px solid #d0d9d4;
@@ -173,18 +148,16 @@ span {
   border-style: solid;
 }
 
-.projectimg{
-
-  max-width:100%;
-  max-height:100%;
-
+.projectimg {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .cnt {
   display: inline-block;
 }
 
-.item3,
+/* .item3,
 .item4,
 .item5,
 .item6,
@@ -192,7 +165,7 @@ span {
 .item8 {
   object-fit: cover;
   margin-bottom: 30px;
-}
+} */
 
 .see-project {
   font-family: "inter", sans-serif;
@@ -215,12 +188,12 @@ span {
 }
 
 .container9 {
-  
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
-  /*margin-left: auto;*/
+
+  /* margin-left: auto; */
   text-align: center;
   background: white;
   border-style: none;
@@ -237,7 +210,6 @@ span {
   background-repeat: no-repeat;
 }
 
-
 .about {
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -248,15 +220,14 @@ span {
   color: #172b4d;
 }
 
-.about h2{
+.about h2 {
   font-family: "Inter", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
-
 }
 
 .description {
@@ -284,12 +255,39 @@ span {
   border-radius: 8px;
 }
 
-
-
 .coding-languages > div,
 .frameworks > div,
 .skills > div {
   margin: auto;
+}
+
+.btn-new {
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.btn-new li {
+  background-color: white;
+  margin: 0.3rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1.2rem;
+}
+
+.btn-new li a {
+  color: #36b37e;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
 }
 
 ul#btn1,
@@ -342,7 +340,7 @@ ul#btn6 {
   margin-left: 3px;
 }
 
-/*.technologies {
+/* .technologies {
   color: #36b37e;
   height: 40px;
   border-style: none;
@@ -355,40 +353,7 @@ ul#btn6 {
   display: inline-block;
   text-align: center;
 
-}*/
-
-.btn-new{
-
-  list-style-type: none;
-  padding: 0;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-bottom: 1rem ;
-  
-}
-
-.btn-new li{
-  background-color: white;  
-  margin: 0.3rem;
-  outline: none;
-  border: none;
-  border-radius: 10px ;
-  padding: 0.7rem 1.2rem;
-}
-
-.btn-new li a{
-
-  color: #36B37E;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-}
-
+} */
 
 .lang-icon {
   width: 80px;
@@ -416,37 +381,29 @@ ul#btn6 {
 }
 
 .wrapper {
- 
   display: grid;
   gap: 10px;
   place-items: center;
-
 }
 
-
-.container10{
-
-  
+.container10 {
   display: flex;
   width: 100%;
   flex-direction: column;
   align-content: center;
   background: white;
   border-style: none;
-  
-
 }
 
-#form  {
+#form {
   list-style-type: none;
   padding: 0;
-  flex-direction: column;*/
+  flex-direction: column;
   align-content: center;
-  
 }
 
-#form li{
-  margin-top: 1.2rem ;
+#form li {
+  margin-top: 1.2rem;
   margin-right: 1rem;
 }
 
@@ -475,16 +432,15 @@ textarea#msg {
   width: 250px;
 }
 
-form h4 {
+.message {
   padding-top: 10px;
   font-family: "inter", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
-  
 }
 
 footer {
@@ -511,19 +467,19 @@ footer {
   margin-top: 10px;
 } */
 
-.getintouch:hover {
+.btn-btn:hover {
   transition: background-color 0.5s;
   background-color: #36b37f;
   opacity: 0.9;
   cursor: pointer;
 }
 
-
 #twitter2 {
   margin-top: 15px;
 }
-.contact{
- align-items: center;
+
+.contact {
+  align-items: center;
 }
 
 .email {
@@ -532,24 +488,148 @@ footer {
   color: #42526e;
 }
 
-@media (min-width:600px) { 
-
-  .background{
-
-  background-image: url("img/background_desktop.png");
-  background-position: 0% 0% ;
-
-  }
-
-  .hide_mobile{
-    display: flex;
-
-  }
-
-  .hamburger{
-    display: none;
-  }
+.scroll_hide_desk {
+  display: none;
 }
 
+hr {
+  display: none;
+}
 
+@media (min-width: 1024px) {
+  .background {
+    background-image: url("img/background_desktop.svg");
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 60%;
+  }
 
+  .scroll_hide_desk {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .hide_mobile {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 0;
+  }
+
+  .hide_mobile li {
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+
+  .greeting {
+    padding-top: 150px;
+  }
+
+  .connect {
+    padding: 0%;
+    margin-bottom: 1rem;
+  }
+
+  .presentation + .greeting {
+    margin-top: -150px;
+  }
+
+  .presentation {
+    margin: 0 0;
+    padding-top: 10px;
+    font-size: 15px;
+  }
+
+  .indicator {
+    display: none;
+  }
+
+  .scroll_hide_mobile {
+    margin-bottom: 150px;
+    margin-top: 50px;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(3, 0.1fr);
+    grid-gap: 1rem 1rem;
+    grid-auto-rows: minmax(40px, auto);
+    justify-content: center;
+  }
+
+  #aboutme {
+    background-image: url("img/background_aboutme.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .resume-tech {
+    display: flex;
+  }
+
+  .coding-languages,
+  .frameworks,
+  .skills {
+    inline-size: 100%;
+    
+  }
+
+  .container10 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem 1rem;
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .message {
+    text-align: start;
+    padding-top: 10px;
+    width: 700px;
+    margin-left: 60px;
+  }
+
+  .formme {
+    padding-top: 30px;
+  }
+
+  input#name,
+  input#mail {
+    width: 600px;
+  }
+
+  textarea#msg {
+    width: 600px;
+  }
+
+  footer {
+    justify-content: start;
+    background: none;
+  }
+
+  .email {
+    display: none;
+  }
+
+  hr {
+    background: #dfe1e6;
+    border: none;
+    height: 1px;
+    color: #dfe1e6;
+    margin: 0%;
+  }
+
+  .btn-btn {
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: none;
+    font-weight: 500;
+  }
+}
