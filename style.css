@@ -16,19 +16,19 @@ body {
   margin: 0 0;
 }
 
-.logo {
+
+ .logo {
+  text-decoration: none;
   font-family: "inter", sans-serif;
-  font-style: normal;
+  font-style:normal;
   font-size: 25px;
   font-weight: 600;
   line-height: 28px;
   text-align: left;
-  color: #28352f;
+  color: #28352F;
 }
 
-a {
-  text-decoration: none;
-}
+
 
 .container2 {
   display: flex;
@@ -106,7 +106,15 @@ span {
 .media {
   padding: 10px;
   margin-top: auto;
+  
 }
+
+a {
+  text-decoration: none;
+
+}
+
+
 
 .recent-works {
   font-family: "inter", sans-serif;
@@ -473,6 +481,29 @@ footer {
   background-color: #36b37f;
   opacity: 0.9;
   cursor: pointer;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
 #twitter2 {
