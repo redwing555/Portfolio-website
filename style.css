@@ -1,7 +1,7 @@
 
-* {
+/** {
   outline: solid 1px red;
-}
+} */
 
 .background {
   background-image: url("img/background.png");
@@ -492,7 +492,7 @@ footer {
   display: none;
 }
 
-hr {
+.horizontal-line {
   display: none;
 }
 
@@ -577,8 +577,8 @@ hr {
   .frameworks,
   .skills {
     inline-size: 100%;
-    
   }
+
 
   .container10 {
     display: grid;
@@ -609,6 +609,10 @@ hr {
     width: 600px;
   }
 
+  .getintouch {
+    padding-right: 448px;
+  }
+
   footer {
     justify-content: start;
     background: none;
@@ -618,18 +622,23 @@ hr {
     display: none;
   }
 
-  hr {
-    background: #dfe1e6;
+  .horizontal-line {
+    background: #161616;
     border: none;
     height: 1px;
-    color: #dfe1e6;
-    margin: 0%;
-  }
+    color: #0f1011;
+  } 
+
 
   .btn-btn {
     padding: 1rem 1.5rem;
     outline: none;
     border: none;
     font-weight: 500;
+  }
+
+  .divbtn-btn {
+    padding: 10px;
+    margin-bottom: 1rem;
   }
 }
