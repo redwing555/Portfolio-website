@@ -106,7 +106,11 @@ span {
 .media {
   padding: 10px;
   margin-top: auto;
-  
+  transition: transform 1s ease-in-out;
+}
+
+.media:hover {
+  transform: translateY(-2rem);
 }
 
 a {
