@@ -557,28 +557,26 @@ footer {
 
   .resume-tech {
     display: flex;
-    margin-right: 21%;
-    margin-left: 21%;
+    margin-right: 20%;
+    margin-left: 20%;
   }
 
-  
-.btn-new {
-  
-  padding: 0;
-  margin-bottom: 0;
-}
 
-.btn-new li {
-  
-  margin: 0.3rem;
-  padding: 0.6rem 0.4rem;
-}
+  .btn-new {
+    padding: 0;
+    margin-bottom: 0;
+  }
 
+  .btn-new li {
+    margin: 0.3rem;
+    padding: 0.6rem 0.4rem;
+  }
 
   .coding-languages,
   .frameworks,
   .skills {
     inline-size: 100%;
+    margin: 10px;
   }
 
   .container10 {
