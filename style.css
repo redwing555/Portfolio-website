@@ -321,6 +321,11 @@ ul#btn6 {
   border-radius: 4px;
 }
 
+.divbtn-btn {
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
 .languages {
   flex-grow: 2;
   height: 40px;
@@ -443,10 +448,6 @@ textarea#msg {
   text-align: center;
 }
 
-hr {
-  display: none;
-}
-
 footer {
   background-image: url("img/background3.png");
   background-repeat: no-repeat;
@@ -455,6 +456,16 @@ footer {
   gap: 10px;
   justify-content: center;
   align-content: center;
+}
+
+.connectfooter {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-btn:hover {
@@ -490,6 +501,10 @@ footer {
     background-position-y: 60%;
   }
 
+  main {
+    max-width: 100%;
+  }
+
   .scroll_hide_desk {
     display: none;
   }
@@ -518,9 +533,14 @@ footer {
     padding-top: 150px;
   }
 
-  .connect {
+  .connectfooter {
+    margin-right: 300px;
     padding: 0%;
     margin-bottom: 1rem;
+  }
+
+  .connect {
+    padding: 0;
   }
 
   .presentation + .greeting {
@@ -543,6 +563,7 @@ footer {
   }
 
   .wrapper {
+    max-width: 100%;
     grid-template-columns: repeat(3, 0.1fr);
     grid-gap: 1rem 1rem;
     grid-auto-rows: minmax(40px, auto);
@@ -557,8 +578,7 @@ footer {
 
   .resume-tech {
     display: flex;
-    margin-right: 20%;
-    margin-left: 20%;
+    max-width: 68%;
   }
 
   .btn-new {
@@ -583,48 +603,63 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem 1rem;
     grid-auto-rows: minmax(100px, auto);
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .ruby {
+    width: 92px;
+  }
+
+  .about h2 {
+    margin-bottom: -6px;
+    margin-top: 86px;
   }
 
   .message {
+    font-size: 24px;
+    line-height: 40px;
     text-align: start;
-    padding-top: 10px;
-    width: 700px;
-    margin-left: 60px;
+    padding-top: 50px;
+    width: 396px;
+    margin-left: 0;
   }
 
   .formme {
-    padding-top: 30px;
+    padding-top: 16px;
+  }
+
+  #form {
+    margin-right: -109px;
+    margin-top: 0;
+  }
+
+  #form li {
+    padding-right: 13px;
+  }
+
+  .getintouch {
+    padding-right: 407px;
   }
 
   input#name,
   input#mail {
-    width: 600px;
+    width: 585px;
   }
 
   textarea#msg {
-    width: 600px;
-  }
-
-  .getintouch {
-    padding-right: 448px;
+    width: 585px;
   }
 
   footer {
+    max-width: 100%;
     justify-content: start;
     background: none;
+    margin-left: 265px;
   }
 
   .email {
     display: none;
-  }
-
-  hr {
-    background: #161616;
-    border: none;
-    height: 1px;
-    color: #0f1011;
   }
 
   .btn-btn {
