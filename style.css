@@ -443,6 +443,10 @@ textarea#msg {
   text-align: center;
 }
 
+hr {
+  display: none;
+}
+
 footer {
   background-image: url("img/background3.png");
   background-repeat: no-repeat;
@@ -489,10 +493,6 @@ footer {
 }
 
 .scroll_hide_desk {
-  display: none;
-}
-
-.horizontal-line {
   display: none;
 }
 
@@ -579,7 +579,6 @@ footer {
     inline-size: 100%;
   }
 
-
   .container10 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -622,12 +621,12 @@ footer {
     display: none;
   }
 
-  .horizontal-line {
+  hr {
     background: #161616;
     border: none;
     height: 1px;
     color: #0f1011;
-  } 
+  }
 
 
   .btn-btn {
