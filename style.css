@@ -154,19 +154,17 @@ span {
   border-style: solid;
 }
 
-.container3:hover{
-    animation-name: large;
-    animation-duration: 500ms;
-    animation-fill-mode: both;
-
+.container3:hover {
+  animation-name: large;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
 }
 
 @keyframes large {
-
   100% {
-  box-shadow: 0 5px 2vw #28352f3e;
-  transform: scale(1.02);
-  };
+    box-shadow: 0 5px 2vw #28352f3e;
+    transform: scale(1.02);
+  }
 }
 
 .projectimg {
@@ -275,9 +273,6 @@ span {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
 }
-
-
-
 
 .coding-languages > div,
 .frameworks > div,
