@@ -87,6 +87,11 @@ span {
   margin: 0 0.5rem;
 }
 
+.hide_mobile li :hover {
+  transition: color 0.1s;
+  color: rgb(94, 139, 94);
+}
+
 .hide_mobile li a {
   color: black;
   font-size: 1rem;
@@ -133,6 +138,12 @@ span {
   border-style: solid;
   border-color: rgb(211, 210, 210);
   border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.scroll-down:hover {
+  transform: translateY(1rem) rotate(360deg);
 }
 
 .indicator {
@@ -176,16 +187,6 @@ span {
   display: inline-block;
 }
 
-/* .item3,
-.item4,
-.item5,
-.item6,
-.item7,
-.item8 {
-  object-fit: cover;
-  margin-bottom: 30px;
-} */
-
 .see-project {
   font-family: "inter", sans-serif;
   font-style: normal;
@@ -211,8 +212,6 @@ span {
   width: 100%;
   flex-direction: column;
   align-items: center;
-
-  /* margin-left: auto; */
   text-align: center;
   background: white;
   border-style: none;
@@ -363,21 +362,6 @@ ul#btn6 {
   margin-left: 25%;
   margin-left: 3px;
 }
-
-/* .technologies {
-  color: #36b37e;
-  height: 40px;
-  border-style: none;
-  border-radius: 6px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 10px;
-  background-color: white;
-  display: inline-block;
-  text-align: center;
-
-} */
 
 .lang-icon {
   width: 80px;
