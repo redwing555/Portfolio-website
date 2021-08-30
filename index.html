@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-  <title>Portfolio</title>
+  <title>Houssam Portfolio Webpage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6FK88TW218"></script>
 <script>
@@ -26,14 +28,17 @@
           <span><a class="logo" href="#">Houssam</a></span>
         </div>
         <ul class="hide_mobile">
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">contact</a></li>
+          <li><a class="mnitem" href="#portfolio">Portfolio</a></li>
+          <li><a class="mnitem" href="#aboutme">About</a></li>
+          <li><a class="mnitem" href="#contact">contact</a></li>
         </ul>
         <button class="hamburger">
           <span><i class="fa fa-bars fa-2x"></i></span>
         </button>
       </nav>
+      <button class="close">
+        ✖
+      </button>
     </header>
 
     <section id="homepage" class="background container2">
@@ -67,13 +72,15 @@
         </li>
       </ul>
 
-      <div class="scroll_hide_mobile">
-        <button class="scroll-down" type="button">
-          <i class="fa fa-angle-down fa-2x"></i>
-        </button>
-      </div>
+      
     </section>
 
+    
+    <div class="scroll_hide_mobile">
+      <button class="scroll-down" type="button">
+        <i class="fa fa-angle-down fa-2x"></i>
+      </button>
+    </div>
     <section>
       <div class="scroll_hide_desk">
         <button class="scroll-down" type="button">
@@ -88,12 +95,12 @@
         <img alt="indcator" src="img/Indicator.png" />
       </div>
     </section>
-
-    <div class="wrapper">
+    <div class="wrapper" id="portfolio">
+      
       <div>
-        <section id="works1" class="container3">
+        <section class="container3">
           <div>
-            <img class="projectimg" alt="work1" src="img/work1.png" />
+            <img class="projectimg" alt="Project's webpage screenshot" src="img/work1.png" />
           </div>
           <div>
             <h2>
@@ -118,9 +125,9 @@
       </div>
 
       <div>
-        <section id="works2" class="container3">
+        <section class="container3">
           <div>
-            <img class="projectimg" alt="work2" src="img/work1.png" />
+            <img class="projectimg" alt="Project's webpage screenshot" src="img/work1.png" />
           </div>
           <div>
             <h2>
@@ -145,9 +152,9 @@
       </div>
 
       <div>
-        <section id="works3" class="container3">
+        <section class="container3">
           <div>
-            <img class="projectimg" alt="work3" src="img/work1.png" />
+            <img class="projectimg" alt="Project's webpage screenshot" src="img/work1.png" />
           </div>
 
           <div>
@@ -173,9 +180,9 @@
       </div>
 
       <div>
-        <section id="works4" class="container3">
+        <section class="container3">
           <div>
-            <img class="projectimg" alt="work4" src="img/work1.png" />
+            <img class="projectimg" alt="Project's webpage screenshot" src="img/work1.png" />
           </div>
 
           <div>
@@ -201,9 +208,9 @@
       </div>
 
       <div>
-        <section id="works5" class="container3">
+        <section class="container3">
           <div>
-            <img class="projectimg" alt="work5" src="img/work1.png" />
+            <img class="projectimg" alt="Project's webpage screenshot" src="img/work1.png" />
           </div>
 
           <div>
@@ -213,7 +220,7 @@
             </h2>
           </div>
 
-          <div class="item7 btn-group">
+          <div class="btn-group">
             <ul id="btn5">
               <li><button class="ruby languages">Ruby on rails</button></li>
               <li><button class="languages">CSS</button></li>
@@ -229,19 +236,19 @@
       </div>
 
       <div>
-        <section id="works6" class="container3">
-          <div class="item8">
-            <img class="projectimg" alt="work6" src="img/work1.png" />
+        <section class="container3">
+          <div>
+            <img class="projectimg" alt="Project's webpage screenshot" src="img/work1.png" />
           </div>
 
-          <div class="item8">
+          <div>
             <h2>
               Multi-Post Stories<br />
               Gain+Glory
             </h2>
           </div>
 
-          <div class="item8 btn-group">
+          <div class="btn-group">
             <ul id="btn6">
               <li><button class="ruby languages">Ruby on rails</button></li>
               <li><button class="languages">CSS</button></li>
@@ -278,7 +285,7 @@
       <section class="resume-tech">
         <section class="item9 coding-languages">
           <div>
-            <img class="lang-icon" alt="lang icon" src="img/icon-languages.png" />
+            <img class="lang-icon" alt="" src="img/icon-languages.png" />
           </div>
 
           <div>
@@ -297,7 +304,7 @@
 
         <section class="item9 frameworks">
           <div>
-            <img class="lang-icon" alt="lang icon" src="img/icon-frameworks.png" />
+            <img class="lang-icon" alt="" src="img/icon-frameworks.png" />
           </div>
 
           <div>
@@ -317,7 +324,7 @@
 
         <section class="item9 skills">
           <div>
-            <img class="lang-icon item9-3" alt="lang icon" src="img/icon-skills.png" />
+            <img class="lang-icon" alt="" src="img/icon-skills.png" />
           </div>
 
           <div>
@@ -389,11 +396,12 @@
         <div><a href="#" class="email">hichami.houssam@gmail.com</a></div>
 
         <div class="indicator">
-          <img alt="indcator" src="img/Indicator.png" />
+          <img alt="" src="img/Indicator.png" />
         </div>
       </div>
     </footer>
   </main>
+  <script src="/index.js"></script>
 </body>
 
 </html>
