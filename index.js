@@ -3,6 +3,7 @@ const hamburger = document.querySelector('.hamburger');
 const close = document.querySelector('.close');
 
 
+
 const menu = document.querySelector('.hide_mobile');
 
 
@@ -14,17 +15,15 @@ close.addEventListener('click', closeMenu);
 
 function openMenu() {
 
-    if(menu.classList.toggle("hamburger-toggle",true)){        
-        /*menu.classList.toggle("hamburger-toggle");*/
+    if(menu.classList.toggle("hamburger-toggle",true)){
+
+        
+       
         hamburger.classList.toggle("hide_hamburger"); 
         close.classList.toggle("close-toggle");
         body.style.overflow = "hidden";
 
     }
-
-    /*else{
-        body.style.overflow = "visible";
-    }*/
 
 
     
@@ -36,10 +35,11 @@ function closeMenu() {
     menu.classList.remove("hamburger-toggle");
     close.classList.remove("close-toggle");
     hamburger.classList.toggle("hide_hamburger");
-    body.style.overflow = "scroll";
+    body.style.overflow = "visible";
+
 }
 
-const navList = document.querySelectorAll('mnitem');
+const navList = document.querySelectorAll('.mnitem');
 for (let i = 0; i < navList.length; i++) {
     navList[i].addEventListener('click', closeMenu);
-}
+} 
