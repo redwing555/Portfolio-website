@@ -12,8 +12,7 @@
 
 ## Built With
 
-- HTML , CSS
-- Frameworks
+- HTML , CSS, Javascript.
 - Github, Git actions, vscode studio.
 
 
