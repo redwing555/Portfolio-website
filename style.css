@@ -194,9 +194,9 @@ button.close-toggle {
   margin-bottom: 20px;
 }
 
- .popup-window{
+ /* .popup-window{
   display: none;
-} 
+}  */
 
 .project-description{
 
@@ -464,7 +464,6 @@ ul#btn6 {
 .btn-btn {
   
   font-family: "inter", sans-serif;
-  width: 119px;
   outline: none;
   border: none;
   /*font-size: 1.2rem;*/
