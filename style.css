@@ -1,7 +1,7 @@
 
-/** {
+* {
   outline: solid 1px red;
-} */
+} 
 
 .background {
   background-image: url("img/background.png");
@@ -15,6 +15,8 @@ body {
   padding: 0 0;
   margin: 0 0;
 }
+
+
 
 .logo {
   text-decoration: none;
@@ -69,6 +71,7 @@ span {
   margin-top: 1rem;
 }
 
+
 .hamburger {
   outline: none;
   border: none;
@@ -91,8 +94,13 @@ span {
 
 button.close-toggle {
   display: block;
-  margin-top: -2rem;
-  margin-right: 3rem;
+  margin-top: -2.5rem;
+  margin-right: 3.5rem;
+  border: none;
+  outline: none;
+  font-size: 4rem;
+  font-weight: bold;
+
 }
 
 .hide_mobile {
@@ -186,6 +194,98 @@ button.close-toggle {
   margin-bottom: 20px;
 }
 
+ .popup-window{
+  display: none;
+} 
+
+.project-description{
+
+  
+font-family: 'Inter', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: #344563;
+
+
+}
+
+.popup{
+
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #DFE1E6;
+  box-sizing: border-box;
+  border-radius: 16px;
+ 
+}
+
+.closepopup{
+  border: none;
+  background-color:transparent;
+  color: gray;
+  font-size: 4rem;
+  size: 1rem;
+  transform:translate(13rem,6rem) ;
+}
+
+.popuphead{
+  margin-top: -6rem;
+}
+
+.seelive-seesrc{
+  display: flex;
+  justify-content: space-around;
+  gap: 1.7rem;
+  
+}
+.projectimg.popupimg{
+
+  width: 311px;
+  height: 220px;
+  border-radius: 8px;
+  margin: 12px 0px;
+
+
+}
+
+.project-title{
+
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 44px;
+color: #172B4D;
+text-align: left;
+
+}
+
+.seelive,
+.seesource
+{
+  
+  height: 48px;
+  width: 141px;
+  letter-spacing:0.04rem ;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.techno{
+  display: flex;
+  gap: 0.8rem;
+
+}
+
+
+
 .container3 {
   display: flex;
   width: 95%;
@@ -211,6 +311,8 @@ button.close-toggle {
     transform: scale(1.02);
   }
 }
+
+
 
 .projectimg {
   max-width: 100%;
@@ -360,17 +462,21 @@ ul#btn6 {
 }
 
 .btn-btn {
+  
   font-family: "inter", sans-serif;
-  padding: 1rem 1.5rem;
+  width: 119px;
   outline: none;
   border: none;
-  font-size: 1.2rem;
+  /*font-size: 1.2rem;*/
   text-align: center;
   font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
   cursor: pointer;
   background: #36b37f;
   color: white;
   border-radius: 4px;
+ 
 }
 
 .divbtn-btn {
@@ -651,6 +757,92 @@ footer {
   .recent-works {
     padding-bottom: 5rem;
   }
+
+  .project-description{
+
+  
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #344563;
+    
+    
+    }
+    
+    .popup{
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 16px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid #DFE1E6;
+      box-sizing: border-box;
+      border-radius: 16px;
+     
+    }
+    
+    .closepopup{
+      border: none;
+      background-color:transparent;
+      color: gray;
+      font-size: 4rem;
+      size: 1rem;
+      transform:translate(13rem,6rem) ;
+    }
+    
+    .popuphead{
+      margin-top: -6rem;
+    }
+    
+    .seelive-seesrc{
+      display: flex;
+      justify-content: space-around;
+      gap: 1.7rem;
+      
+    }
+    .projectimg.popupimg{
+    
+      width: 311px;
+      height: 220px;
+      border-radius: 8px;
+      margin: 12px 0px;
+    
+    
+    }
+    
+    .project-title{
+    
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172B4D;
+    text-align: left;
+    
+    }
+    
+    .btn-btn.seelive,
+    .btn-btn.seesource
+    {
+      
+      
+      
+      letter-spacing:0.04rem ;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 24px;
+    }
+    
+    .techno{
+      display: flex;
+      margin-left: -9rem;
+      gap: 0.8rem;
+    
+    }
 
   .wrapper {
     max-width: 100%;
