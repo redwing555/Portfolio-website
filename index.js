@@ -1,99 +1,83 @@
-
-
 const body = document.querySelector('body');
 const hamburger = document.querySelector('.hamburger');
 const close = document.querySelector('.close');
 const menu = document.querySelector('.hide_mobile');
-const projectCards = document.querySelector(".wrapper");
+const projectCards = document.querySelector('.wrapper');
 const contactContain = document.getElementById('contact');
 const aboutContain = document.getElementById('aboutme');
 const mainContain = document.getElementById('portfolio');
-const popupContain = document.querySelectorAll('popup-window');
+/* const popupContain = document.querySelectorAll('popup-window'); */
 const homepageContain = document.getElementById('homepage');
-//const recentworkContain = document.querySelector("recent-work");
+// const recentworkContain = document.querySelector("recent-work");
 
-
-
-
-
-
-
-
-let projectsArray = [
-              {
-                id : 1,
-                name: "Multi-Post Stories Gain+Glory",
-                description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit ',
-                image:"img/work1.png",
-                technologies:['Ruby on rails','css','JavaScript','html','Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
-                seeProject : "See Project",
-                liveLink:"See Live",
-                sourceLink:"See Source"
-              },
-              {
-                id : 2,
-                name: "Multi-Post Stories Gain+Glory",
-                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit",
-                image:"img/work1.png",
-                technologies:['Ruby on rails','css','JavaScript','html','Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
-                seeProject : "See Project",
-                liveLink:"See Live",
-                sourceLink:"See Source"
-              },
-              {
-                id : 3,
-                name: "Multi-Post Stories Gain+Glory",
-                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit",
-                image:"img/work1.png",
-                technologies:['Ruby on rails','css','JavaScript','html','Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
-                seeProject : "See Project",
-                liveLink:"See Live",
-                sourceLink:"See Source"
-              },
-              {
-                id : 4,
-                name: "Multi-Post Stories Gain+Glory",
-                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit",
-                image:"img/work1.png",
-                technologies:['Ruby on rails','css','JavaScript','html','Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
-                seeProject : "See Project",
-                liveLink:"See Live",
-                sourceLink:"See Source"
-              },
-              {
-                id : 5,
-                name: "Multi-Post Stories Gain+Glory",
-                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit",
-                image:"img/work1.png",
-                technologies:['Ruby on rails','css','JavaScript','html','Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
-                seeProject : "See Project",
-                liveLink:"See Live",
-                sourceLink:"See Source"
-              },
-              {
-                id : 6,
-                name: "Multi-Post Stories Gain+Glory",
-                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit",
-                image:"img/work1.png",
-                technologies:['Ruby on rails','css','JavaScript','html','Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
-                seeProject : "See Project",
-                liveLink:"See Live",
-                sourceLink:"See Source"
-              }
-            ];
-
-
+const projectsArray = [
+  {
+    id: 1,
+    name: 'Multi-Post Stories Gain+Glory',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit ',
+    image: 'img/work1.png',
+    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+    seeProject: 'See Project',
+    liveLink: 'See Live',
+    sourceLink: 'See Source',
+  },
+  {
+    id: 2,
+    name: 'Multi-Post Stories Gain+Glory',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    image: 'img/work1.png',
+    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+    seeProject: 'See Project',
+    liveLink: 'See Live',
+    sourceLink: 'See Source',
+  },
+  {
+    id: 3,
+    name: 'Multi-Post Stories Gain+Glory',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    image: 'img/work1.png',
+    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+    seeProject: 'See Project',
+    liveLink: 'See Live',
+    sourceLink: 'See Source',
+  },
+  {
+    id: 4,
+    name: 'Multi-Post Stories Gain+Glory',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    image: 'img/work1.png',
+    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+    seeProject: 'See Project',
+    liveLink: 'See Live',
+    sourceLink: 'See Source',
+  },
+  {
+    id: 5,
+    name: 'Multi-Post Stories Gain+Glory',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    image: 'img/work1.png',
+    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+    seeProject: 'See Project',
+    liveLink: 'See Live',
+    sourceLink: 'See Source',
+  },
+  {
+    id: 6,
+    name: 'Multi-Post Stories Gain+Glory',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    image: 'img/work1.png',
+    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+    seeProject: 'See Project',
+    liveLink: 'See Live',
+    sourceLink: 'See Source',
+  },
+];
 
 function portfolioFunc() {
+  let portfolioCode = '';
 
-  let portfolioCode = ``;
-
- projectsArray.forEach(function(singleProject){
-
-  
-
-
- portfolioCode = portfolioCode + `<section class="container3">
+  projectsArray.forEach((singleProject) => {
+    portfolioCode += `<section class="container3">
 
           <div>
             <img class="projectimg" alt="Project's webpage screenshot" src="${singleProject.image}" />
@@ -123,32 +107,21 @@ function portfolioFunc() {
 
 
         </section>`;
+  });
 
-
- });
-
- 
- projectCards.innerHTML = portfolioCode;
-
-
+  projectCards.innerHTML = portfolioCode;
 }
 
 portfolioFunc();
- 
-
 
 const popupBtns = document.querySelectorAll('.see-project');
 const popupViews = document.querySelector('.popup-window');
 
-
-
-function getPopupDetails(event){
-
-  let Ids = event.target.id;
+function getPopupDetails(event) {
+  const Ids = event.target.id;
   let temp = 0;
 
   switch (Ids) {
-
     case 1:
       temp = 0;
       break;
@@ -160,11 +133,11 @@ function getPopupDetails(event){
     case 3:
       temp = 2;
       break;
-    
+
     case 4:
       temp = 3;
       break;
-    
+
     case 5:
       temp = 4;
       break;
@@ -173,11 +146,10 @@ function getPopupDetails(event){
       temp = 5;
       break;
 
-
+    default:
+      break;
   }
 
- 
-  
   popupViews.classList.add('popup');
 
   popupViews.innerHTML = `       
@@ -219,47 +191,30 @@ function getPopupDetails(event){
               
              </div>`;
 
-             
-
-             body.style.overflow = 'hidden';
-             mainContain.style.filter = 'blur(5px)';
-             aboutContain.style.filter = 'blur(5px)';
-             contactContain.style.filter = 'blur(5px)';
-             homepageContain.style.filter = 'blur(5px)';
-            
-
-             
-            
-
-
+  body.style.overflow = 'hidden';
+  mainContain.style.filter = 'blur(5px)';
+  aboutContain.style.filter = 'blur(5px)';
+  contactContain.style.filter = 'blur(5px)';
+  homepageContain.style.filter = 'blur(5px)';
 }
 
 popupBtns.forEach((popupBtn) => {
-  popupBtn.addEventListener("click", getPopupDetails);
+  popupBtn.addEventListener('click', getPopupDetails);
 });
-            
-
-
-
-
+/* eslint-disable */
 function closePopup() {
- 
-
   popupViews.classList.remove('popup');
   mainContain.style.filter = 'blur(0px)';
   aboutContain.style.filter = 'blur(0px)';
   contactContain.style.filter = 'blur(0px)';
   homepageContain.style.filter = 'blur(0px)';
   body.style.overflow = 'scroll';
-
-
 }
-
-
+/* eslint-enable */
 
 function openMenu() {
   if (menu.classList.toggle('hamburger-toggle', true)) {
-    hamburger.classList.toggle('hide_hamburger');
+    /* hamburger.classList.toggle('hide_hamburger'); */
     close.classList.toggle('close-toggle');
     homepageContain.style.filter = 'blur(5px)';
     body.style.overflow = 'hidden';
@@ -282,4 +237,3 @@ const navList = document.querySelectorAll('.mnitem');
 for (let i = 0; i < navList.length; i += 1) {
   navList[i].addEventListener('click', closeMenu);
 }
-
