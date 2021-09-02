@@ -1,7 +1,7 @@
 
-* {
+/* * {
   outline: solid 1px red;
-} 
+}  */
 
 .background {
   background-image: url("img/background.png");
@@ -113,6 +113,7 @@ button.close-toggle {
   align-items: flex-start;
   list-style-type: none;
   position: absolute;
+  z-index: 2;
   width: 100%;
   height: 90%;
   border-bottom-left-radius: 50px;
@@ -122,6 +123,7 @@ button.close-toggle {
   background: white;
   touch-action: none;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  transition:ease-in-out 1s;
 }
 
 .hamburger-toggle li {
@@ -194,9 +196,12 @@ button.close-toggle {
   margin-bottom: 20px;
 }
 
- .popup-window{
+.popup-window{
   display: none;
 } 
+
+
+
 
 .project-description{
 
@@ -208,30 +213,41 @@ font-weight: 400;
 line-height: 24px;
 text-align: left;
 color: #344563;
+margin-left: 1rem;
 
 
 }
 
 .popup{
-
+  display: flex;
   flex-direction: column;
+  background-color: #fff;
   align-items: flex-start;
-  padding: 16px;
-  margin-left: auto;
-  margin-right: auto;
+  position:fixed;
+  top: 26px ;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 1000;
+  margin: 1rem;
   border: 1px solid #DFE1E6;
   box-sizing: border-box;
   border-radius: 16px;
+  transition:  0.5s ;
+
+  
+
  
 }
 
 .closepopup{
+  z-index: 2;
   border: none;
   background-color:transparent;
   color: gray;
   font-size: 4rem;
   size: 1rem;
-  transform:translate(13rem,6rem) ;
+  transform:translate(25rem,0rem) ;
 }
 
 .popuphead{
@@ -239,17 +255,27 @@ color: #344563;
 }
 
 .seelive-seesrc{
+  
   display: flex;
-  justify-content: space-around;
-  gap: 1.7rem;
+  justify-content: center;
+  align-content: center;
+  margin-left: 12px;
+  gap: 8px;
+  margin-top: 37px;
+
   
 }
+
+
+
 .projectimg.popupimg{
 
-  width: 311px;
+  width: 283px;
   height: 220px;
   border-radius: 8px;
   margin: 12px 0px;
+  
+  transform: translate(4px, -65px);
 
 
 }
@@ -266,24 +292,37 @@ text-align: left;
 
 }
 
-.seelive,
-.seesource
+ .seelive,
+ .seesource
 {
   
-  height: 48px;
-  width: 141px;
-  letter-spacing:0.04rem ;
+  height: 48px !important;
+  width: 134px;
+  
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
 }
 
-.techno{
-  display: flex;
-  gap: 0.8rem;
+
+.popup-project-title{
+
+  margin-top: -50px;
+  margin-left: 9px;
+
 
 }
 
+.techno{
+  display: flex;
+  margin-left: -3rem;
+  
+
+}
+
+.btn-group .techno .only-desktop{
+  display:none;
+}
 
 
 .container3 {
@@ -344,6 +383,7 @@ text-align: left;
 }
 
 .container9 {
+  margin-top: 3rem;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -464,7 +504,7 @@ ul#btn6 {
 .btn-btn {
   
   font-family: "inter", sans-serif;
-  width: 119px;
+  height: 60px;
   outline: none;
   border: none;
   /*font-size: 1.2rem;*/
@@ -532,6 +572,7 @@ ul#btn6 {
   display: grid;
   gap: 10px;
   place-items: center;
+  margin-left: -1rem;
   padding-top: 0;
 }
 
@@ -760,7 +801,7 @@ footer {
 
   .project-description{
 
-  
+    margin-top: 1rem;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -768,29 +809,45 @@ footer {
     line-height: 24px;
     text-align: left;
     color: #344563;
+    margin-left: 13px;
+    margin-top: 1rem;
     
     
     }
     
     .popup{
+
+      display: flex;
       flex-direction: column;
       align-items: flex-start;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin-top: 2rem;
+      margin-left: 311px;
+      z-index: 1000;
       padding: 16px;
-      margin-left: auto;
-      margin-right: auto;
-      border: 1px solid #DFE1E6;
-      box-sizing: border-box;
-      border-radius: 16px;
+      Width: 920px;
+      height: 720px;
+      padding: 16px;
+      border: 1px solid #EBECF0;
+      box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+      border-radius: 8px;
+      
      
     }
     
-    .closepopup{
+     .closepopup{
+      height: 28px;
+      width: 29px;
+      font-size: larger;
+      background: #EBECF0;
+      mix-blend-mode: multiply;
       border: none;
-      background-color:transparent;
-      color: gray;
-      font-size: 4rem;
-      size: 1rem;
-      transform:translate(13rem,6rem) ;
+      border-radius: 8px;
+      transform:translate(85rem,-1rem) ;
     }
     
     .popuphead{
@@ -801,14 +858,26 @@ footer {
       display: flex;
       justify-content: space-around;
       gap: 1.7rem;
+      transform: translate(558px, -250px);
       
     }
     .projectimg.popupimg{
     
-      width: 311px;
-      height: 220px;
+      width: 884px;
+      border: 1px solid #EBECF0;
+      box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
       border-radius: 8px;
-      margin: 12px 0px;
+      height: 339px;
+      border-radius: 8px;
+      /*margin-top: 30px;*/
+      transform: translate(2px,-12px);
+    
+    
+    }
+
+    .popup-project-title{
+
+      margin-top: 10px;
     
     
     }
@@ -831,7 +900,7 @@ footer {
       
       
       
-      letter-spacing:0.04rem ;
+      
       font-weight: 500;
       font-size: 17px;
       line-height: 24px;
@@ -839,10 +908,19 @@ footer {
     
     .techno{
       display: flex;
-      margin-left: -9rem;
       gap: 0.8rem;
+      border-radius: 8px;
+      margin-left: -33px;
+      margin-top: 37px;
     
     }
+
+    .btn-group .techno .only-desktop{
+      display:inline;
+      border-radius: 8px;
+    }
+
+    
 
   .wrapper {
     max-width: 100%;
@@ -946,7 +1024,7 @@ footer {
   }
 
   .btn-btn {
-    padding: 1rem 1.5rem;
+    height: 60px;
     outline: none;
     border: none;
     font-weight: 500;

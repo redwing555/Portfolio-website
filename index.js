@@ -4,21 +4,28 @@ const body = document.querySelector('body');
 const hamburger = document.querySelector('.hamburger');
 const close = document.querySelector('.close');
 const menu = document.querySelector('.hide_mobile');
-const popupBtns = document.querySelectorAll('.see-project');
-const closeBtns = document.querySelectorAll('.closepopup');
-const popupViews = document.querySelectorAll('.popup');
+const projectCards = document.querySelector(".wrapper");
+const contactContain = document.getElementById('contact');
+const aboutContain = document.getElementById('aboutme');
+const mainContain = document.getElementById('portfolio');
+const popupContain = document.querySelectorAll('popup-window');
+const homepageContain = document.getElementById('homepage');
+//const recentworkContain = document.querySelector("recent-work");
 
 
 
 
 
-const projectsArray = [
+
+
+
+let projectsArray = [
               {
                 id : 1,
                 name: "Multi-Post Stories Gain+Glory",
-                description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam explicabo eos aperiam? Deleniti voluptatem neque in quia voluptatibus voluptas itaque corrupti alias necessitatibus. Blanditiis possimus facilis obcaecati ullam eius!',
+                description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit ',
                 image:"img/work1.png",
-                technologies:['Ruby on rails','css','JavaScript','html'],
+                technologies:['Ruby on rails','css','JavaScript','html','Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
                 seeProject : "See Project",
                 liveLink:"See Live",
                 sourceLink:"See Source"
@@ -26,9 +33,9 @@ const projectsArray = [
               {
                 id : 2,
                 name: "Multi-Post Stories Gain+Glory",
-                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam explicabo eos aperiam? Deleniti voluptatem neque in quia voluptatibus voluptas itaque corrupti alias necessitatibus. Blanditiis possimus facilis obcaecati ullam eius!",
+                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit",
                 image:"img/work1.png",
-                technologies:['Ruby on rails','css','JavaScript','html'],
+                technologies:['Ruby on rails','css','JavaScript','html','Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
                 seeProject : "See Project",
                 liveLink:"See Live",
                 sourceLink:"See Source"
@@ -36,9 +43,9 @@ const projectsArray = [
               {
                 id : 3,
                 name: "Multi-Post Stories Gain+Glory",
-                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam explicabo eos aperiam? Deleniti voluptatem neque in quia voluptatibus voluptas itaque corrupti alias necessitatibus. Blanditiis possimus facilis obcaecati ullam eius!",
+                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit",
                 image:"img/work1.png",
-                technologies:['Ruby on rails','css','JavaScript','html'],
+                technologies:['Ruby on rails','css','JavaScript','html','Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
                 seeProject : "See Project",
                 liveLink:"See Live",
                 sourceLink:"See Source"
@@ -46,9 +53,9 @@ const projectsArray = [
               {
                 id : 4,
                 name: "Multi-Post Stories Gain+Glory",
-                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam explicabo eos aperiam? Deleniti voluptatem neque in quia voluptatibus voluptas itaque corrupti alias necessitatibus. Blanditiis possimus facilis obcaecati ullam eius!",
+                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit",
                 image:"img/work1.png",
-                technologies:['Ruby on rails','css','JavaScript','html'],
+                technologies:['Ruby on rails','css','JavaScript','html','Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
                 seeProject : "See Project",
                 liveLink:"See Live",
                 sourceLink:"See Source"
@@ -56,9 +63,9 @@ const projectsArray = [
               {
                 id : 5,
                 name: "Multi-Post Stories Gain+Glory",
-                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam explicabo eos aperiam? Deleniti voluptatem neque in quia voluptatibus voluptas itaque corrupti alias necessitatibus. Blanditiis possimus facilis obcaecati ullam eius!",
+                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit",
                 image:"img/work1.png",
-                technologies:['Ruby on rails','css','JavaScript','html'],
+                technologies:['Ruby on rails','css','JavaScript','html','Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
                 seeProject : "See Project",
                 liveLink:"See Live",
                 sourceLink:"See Source"
@@ -66,21 +73,27 @@ const projectsArray = [
               {
                 id : 6,
                 name: "Multi-Post Stories Gain+Glory",
-                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam explicabo eos aperiam? Deleniti voluptatem neque in quia voluptatibus voluptas itaque corrupti alias necessitatibus. Blanditiis possimus facilis obcaecati ullam eius!",
+                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit",
                 image:"img/work1.png",
-                technologies:['Ruby on rails','css','JavaScript','html'],
+                technologies:['Ruby on rails','css','JavaScript','html','Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
                 seeProject : "See Project",
                 liveLink:"See Live",
                 sourceLink:"See Source"
               }
             ];
 
- let portfolioCode = ``;
+
+
+function portfolioFunc() {
+
+  let portfolioCode = ``;
 
  projectsArray.forEach(function(singleProject){
 
+  
 
- portfolioCode = portfolioCode + `<section id=project-${singleProject.id} class="container3">
+
+ portfolioCode = portfolioCode + `<section class="container3">
 
           <div>
             <img class="projectimg" alt="Project's webpage screenshot" src="${singleProject.image}" />
@@ -103,7 +116,7 @@ const projectsArray = [
   
 
           <div class="divbtn-btn">
-            <button class="btn-btn see-project onclick">${singleProject.seeProject}</button>
+            <button id="project-${singleProject.id}" class="btn-btn see-project">${singleProject.seeProject}</button>
             
           </div>
 
@@ -114,87 +127,141 @@ const projectsArray = [
 
  });
 
- const projectCards = document.querySelector(".wrapper");
+ 
  projectCards.innerHTML = portfolioCode;
 
- //////////////
 
- let popupCode = ``;
-
- projectsArray.forEach(function(singleProject){
-
-
- popupCode = popupCode + `<section class="popup">
-
-          
-          <button class="closepopup">
-            &times;
-          </button>
-            <img class="projectimg popupimg" alt="Project's webpage screenshot" src="${singleProject.image}" />
-          
-          <div>
-            <h2 class ="project-title">
-              ${singleProject.name}
-              
-            </h2>
-          </div>
-
-          <div class="btn-group">
-            <ul class="techno" id="btn1">
-              <li><button class="ruby languages">${singleProject.technologies[0]}</button></li>
-              <li><button class="languages">${singleProject.technologies[1]}</button></li>
-              <li><button class="languages">${singleProject.technologies[2]}</button></li>
-            </ul>
-          </div>
-
-          <div><p class ="project-description">${singleProject.description}</p></div>
-  
-
-          <div class="divbtn-btn seelive-seesrc">
-            <button class="btn-btn seelive">${singleProject.liveLink}&nbsp;<img alt="github" src="img/seelive.png" /> </button>
-            <button class="btn-btn seesource">${singleProject.sourceLink}&nbsp; <a href="#"><img alt="github" src="img/seesource.png" /></a> </button>
-            
-          </div>
-
-
-
-        </section>`;
-
-
- });
-
- const popupCards = document.querySelector(".popup-window");
- popupCards.innerHTML = popupCode;
-
-function popup(popupClick) {
-  popupViews[popupClick].classList.add('active');
 }
 
-popupBtns.forEach((popupBtn,i) => {
-  popupBtn.addEventListener("click", () => {
-    popup(i);
-  });
-});
-
-closeBtns.forEach((closeBtn) => {
-  closeBtn.addEventListener("click", () => {
-    popupViews.forEach((popupView) => {
-      popupView.classList.remove('active');
-
-    });
-  });
-});
-
+portfolioFunc();
  
 
 
-////////////////////////////////////////
+const popupBtns = document.querySelectorAll('.see-project');
+const popupViews = document.querySelector('.popup-window');
+
+
+
+function getPopupDetails(event){
+
+  let Ids = event.target.id;
+  let temp = 0;
+
+  switch (Ids) {
+
+    case 1:
+      temp = 0;
+      break;
+
+    case 2:
+      temp = 1;
+      break;
+
+    case 3:
+      temp = 2;
+      break;
+    
+    case 4:
+      temp = 3;
+      break;
+    
+    case 5:
+      temp = 4;
+      break;
+
+    case 6:
+      temp = 5;
+      break;
+
+
+  }
+
+ 
+  
+  popupViews.classList.add('popup');
+
+  popupViews.innerHTML = `       
+           <button class="closepopup" onclick ="closePopup()">
+               &times;
+             </button>
+               <img class="projectimg popupimg" alt="Project's webpage screenshot" src="${projectsArray[temp].image}" />
+            
+             <div>
+               <h2 class ="project-title popup-project-title">
+                 ${projectsArray[temp].name}
+                
+               </h2>
+             </div>
+  
+             <div class="btn-group">
+               <ul class="techno" id="btn1">
+               <li><button class="ruby languages">${projectsArray[temp].technologies[0]}</button></li>
+                <li><button class="languages">${projectsArray[temp].technologies[1]}</button></li>
+                <li><button class="languages">${projectsArray[temp].technologies[2]}</button></li>
+                <li><button class="languages only-desktop">${projectsArray[temp].technologies[3]}</button></li>
+                <li><button class="languages only-desktop">${projectsArray[temp].technologies[4]}</button></li>
+                <li><button class="languages only-desktop">${projectsArray[temp].technologies[5]}</button></li>
+                <li><button class="languages only-desktop">${projectsArray[temp].technologies[6]}</button></li>
+                <li><button class="languages only-desktop">${projectsArray[temp].technologies[7]}</button></li>
+                <li><button class="languages only-desktop">${projectsArray[temp].technologies[8]}</button></li>
+                
+
+                
+               </ul>
+            </div>
+  
+            <div><p class ="project-description">${projectsArray[temp].description}</p></div>
+    
+  
+             <div class="seelive-seesrc">
+              <button class="btn-btn seelive">${projectsArray[temp].liveLink}&nbsp;<img alt="github" src="img/seelive.png" /> </button>
+              <button class="btn-btn seesource">${projectsArray[temp].sourceLink}&nbsp; <a href="#"><img alt="github" src="img/seesource.png" /></a> </button>
+              
+             </div>`;
+
+             
+
+             body.style.overflow = 'hidden';
+             mainContain.style.filter = 'blur(5px)';
+             aboutContain.style.filter = 'blur(5px)';
+             contactContain.style.filter = 'blur(5px)';
+             homepageContain.style.filter = 'blur(5px)';
+            
+
+             
+            
+
+
+}
+
+popupBtns.forEach((popupBtn) => {
+  popupBtn.addEventListener("click", getPopupDetails);
+});
+            
+
+
+
+
+function closePopup() {
+ 
+
+  popupViews.classList.remove('popup');
+  mainContain.style.filter = 'blur(0px)';
+  aboutContain.style.filter = 'blur(0px)';
+  contactContain.style.filter = 'blur(0px)';
+  homepageContain.style.filter = 'blur(0px)';
+  body.style.overflow = 'scroll';
+
+
+}
+
 
 
 function openMenu() {
   if (menu.classList.toggle('hamburger-toggle', true)) {
     hamburger.classList.toggle('hide_hamburger');
     close.classList.toggle('close-toggle');
+    homepageContain.style.filter = 'blur(5px)';
     body.style.overflow = 'hidden';
   }
 }
@@ -205,6 +272,7 @@ function closeMenu() {
   menu.classList.remove('hamburger-toggle');
   close.classList.remove('close-toggle');
   hamburger.classList.toggle('hide_hamburger');
+  homepageContain.style.filter = 'blur(0px)';
   body.style.overflow = 'auto';
 }
 
@@ -214,3 +282,4 @@ const navList = document.querySelectorAll('.mnitem');
 for (let i = 0; i < navList.length; i += 1) {
   navList[i].addEventListener('click', closeMenu);
 }
+
