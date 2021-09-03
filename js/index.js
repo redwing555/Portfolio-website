@@ -254,3 +254,30 @@ form.addEventListener('submit', (eveent) => {
   eveent.preventDefault();
   checkEmail();
 });
+
+const fullName = document.getElementById('name');
+const message = document.getElementById('msg');
+
+const storedData = {
+  nameData: '',
+  emailData: '',
+  messageData: '',
+};
+
+if (localStorage.getItem('formData') === null) {
+  localStorage.setItem('formData', JSON.stringify(storedData));
+} else {
+  const ClientData = JSON.parse(localStorage.getItem('formData'));
+
+  fullName.value = ClientData.nameData;
+  emailInput.value = ClientData.emailData;
+  message.value = ClientData.messageData;
+}
+
+form.addEventListener('input', () => {
+  storedData.nameData = fullName.value;
+  storedData.emailData = emailInput.value;
+  storedData.messageData = message.value;
+
+  localStorage.setItem('formData', JSON.stringify(storedData));
+});
