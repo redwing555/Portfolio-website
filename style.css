@@ -1,7 +1,7 @@
 
 /* * {
   outline: solid 1px red;
-}  */
+}   */
 
 .background {
   background-image: url("img/background.png");
@@ -662,6 +662,14 @@ footer {
   color: #42526e;
 }
 
+#error {
+  color: #d8000c;
+  font-size: larger;
+  display: block !important;
+  padding: 10px;
+  margin-top: 10px;
+}
+
 .scroll_hide_desk {
   display: none;
 }
@@ -726,6 +734,7 @@ footer {
   .greeting {
     padding-top: 150px;
   }
+
 
   .connectfooter {
     margin-right: 300px;
@@ -934,8 +943,8 @@ footer {
     padding-right: 13px;
   }
 
-  .getintouch {
-    padding-right: 407px;
+  #contactme-btn {
+    margin-right: 468px;
   }
 
   input#name,
@@ -945,6 +954,20 @@ footer {
 
   textarea#msg {
     width: 585px;
+  }
+
+  #error {
+    color: #d8000c;
+    font-size: larger;
+    display: inline !important;
+    padding: 10px;
+    border-radius: 10%;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .labelerror {
+    margin-top: -39px;
   }
 
   footer {
