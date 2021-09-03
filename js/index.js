@@ -2,13 +2,10 @@ const body = document.querySelector('body');
 const hamburger = document.querySelector('.hamburger');
 const close = document.querySelector('.close');
 const menu = document.querySelector('.hide_mobile');
-const projectCards = document.querySelector('.wrapper');
 const contactContain = document.getElementById('contact');
 const aboutContain = document.getElementById('aboutme');
 const mainContain = document.getElementById('portfolio');
-/* const popupContain = document.querySelectorAll('popup-window'); */
 const homepageContain = document.getElementById('homepage');
-// const recentworkContain = document.querySelector("recent-work");
 
 const projectsArray = [
   {
@@ -73,46 +70,43 @@ const projectsArray = [
   },
 ];
 
-function portfolioFunc() {
-  let portfolioCode = '';
+// looping through projects Array and dynamically displaying them.
 
-  projectsArray.forEach((singleProject) => {
-    portfolioCode += `<section class="container3">
+let portfolioCode = '';
 
-          <div>
-            <img class="projectimg" alt="Project's webpage screenshot" src="${singleProject.image}" />
-          </div>
-          <div>
-            <h2>
-              ${singleProject.name}
-              
-            </h2>
-          </div>
-
-          <div class="btn-group">
-            <ul id="btn1">
-              <li><button class="ruby languages">${singleProject.technologies[0]}</button></li>
-              <li><button class="languages">${singleProject.technologies[1]}</button></li>
-              <li><button class="languages">${singleProject.technologies[2]}</button></li>
-              <li><button class="languages">${singleProject.technologies[3]}</button></li>
-            </ul>
-          </div>
-  
-
-          <div class="divbtn-btn">
-            <button id="project-${singleProject.id}" class="btn-btn see-project">${singleProject.seeProject}</button>
+projectsArray.forEach((singleProject) => {
+  portfolioCode += `<section class="container3">
+        <div>
+          <img class="projectimg" alt="Project's webpage screenshot" src="${singleProject.image}" />
+        </div>
+        <div>
+          <h2>
+            ${singleProject.name}
             
-          </div>
+          </h2>
+        </div>
+
+        <div class="btn-group">
+          <ul id="btn1">
+            <li><button class="ruby languages">${singleProject.technologies[0]}</button></li>
+            <li><button class="languages">${singleProject.technologies[1]}</button></li>
+            <li><button class="languages">${singleProject.technologies[2]}</button></li>
+            <li><button class="languages">${singleProject.technologies[3]}</button></li>
+          </ul>
+        </div>
+
+
+        <div class="divbtn-btn">
+          <button id="project-${singleProject.id}" class="btn-btn see-project">${singleProject.seeProject}</button>
+          
+        </div>
 
 
 
-        </section>`;
-  });
+      </section>`;
+});
 
-  projectCards.innerHTML = portfolioCode;
-}
-
-portfolioFunc();
+mainContain.innerHTML = portfolioCode;
 
 const popupBtns = document.querySelectorAll('.see-project');
 const popupViews = document.querySelector('.popup-window');
@@ -201,6 +195,7 @@ function getPopupDetails(event) {
 popupBtns.forEach((popupBtn) => {
   popupBtn.addEventListener('click', getPopupDetails);
 });
+
 /* eslint-disable */
 function closePopup() {
   popupViews.classList.remove('popup');
@@ -214,7 +209,6 @@ function closePopup() {
 
 function openMenu() {
   if (menu.classList.toggle('hamburger-toggle', true)) {
-    /* hamburger.classList.toggle('hide_hamburger'); */
     close.classList.toggle('close-toggle');
     homepageContain.style.filter = 'blur(5px)';
     body.style.overflow = 'hidden';
