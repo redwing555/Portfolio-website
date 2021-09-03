@@ -236,28 +236,6 @@ for (let i = 0; i < navList.length; i += 1) {
   navList[i].addEventListener('click', closeMenu);
 }
 
-// form validation of lowercase email
-
-const form = document.getElementById('formId');
-const emailInput = document.getElementById('mail');
-const errorMsg = document.getElementById('error');
-
-function checkEmail() {
-  const TrimmedEmail = emailInput.value.trim();
-
-  if (TrimmedEmail !== TrimmedEmail.toLowerCase()) {
-    errorMsg.innerText = 'Email Address must be Lowercase!';
-    errorMsg.style.display = 'inline';
-  } else {
-    errorMsg.style.display = 'none';
-    form.submit();
-  }
-}
-
-form.addEventListener('submit', (eveent) => {
-  eveent.preventDefault();
-  checkEmail();
-});
 
 // Local storage of form Data
 
