@@ -465,13 +465,11 @@ ul#btn6 {
 
 .btn-btn {
   font-family: "inter", sans-serif;
-  height: 60px;
+  height: 43px;
+  width: 124px;
   outline: none;
   border: none;
-
-  /* font-size: 1.2rem; */
   text-align: center;
-  font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   cursor: pointer;
@@ -895,6 +893,11 @@ footer {
     padding: 0.6rem 0.4rem;
   }
 
+  .btn-btn {
+    height: 43px !important;
+    width: 124px;
+  }
+
   .coding-languages,
   .frameworks,
   .skills {
@@ -978,13 +981,6 @@ footer {
 
   .email {
     display: none;
-  }
-
-  .btn-btn {
-    height: 60px;
-    outline: none;
-    border: none;
-    font-weight: 500;
   }
 
   .divbtn-btn {
