@@ -894,10 +894,8 @@ footer {
   }
 
   .btn-btn {
-    
     height: 43px !important;
     width: 124px;
-    
   }
 
   .coding-languages,
@@ -984,7 +982,6 @@ footer {
   .email {
     display: none;
   }
-
 
   .divbtn-btn {
     padding: 10px;
