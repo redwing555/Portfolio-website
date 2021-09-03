@@ -236,12 +236,12 @@ for (let i = 0; i < navList.length; i += 1) {
   navList[i].addEventListener('click', closeMenu);
 }
 
-
 // Local storage of form Data
 
 const fullName = document.getElementById('name');
 const message = document.getElementById('msg');
 const emailInput = document.getElementById('mail');
+const form = document.getElementById('formId');
 
 function StoreData() {
   const getClientData = JSON.parse(localStorage.getItem('formData'));
