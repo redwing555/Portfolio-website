@@ -2,10 +2,13 @@ const body = document.querySelector('body');
 const hamburger = document.querySelector('.hamburger');
 const close = document.querySelector('.close');
 const menu = document.querySelector('.hide_mobile');
+const projectCards = document.querySelector('.wrapper');
 const contactContain = document.getElementById('contact');
 const aboutContain = document.getElementById('aboutme');
 const mainContain = document.getElementById('portfolio');
+/* const popupContain = document.querySelectorAll('popup-window'); */
 const homepageContain = document.getElementById('homepage');
+// const recentworkContain = document.querySelector("recent-work");
 
 const projectsArray = [
   {
@@ -70,43 +73,46 @@ const projectsArray = [
   },
 ];
 
-// looping through projects Array and dynamically displaying them.
+function portfolioFunc() {
+  let portfolioCode = '';
 
-let portfolioCode = '';
+  projectsArray.forEach((singleProject) => {
+    portfolioCode += `<section class="container3">
 
-projectsArray.forEach((singleProject) => {
-  portfolioCode += `<section class="container3">
-        <div>
-          <img class="projectimg" alt="Project's webpage screenshot" src="${singleProject.image}" />
-        </div>
-        <div>
-          <h2>
-            ${singleProject.name}
+          <div>
+            <img class="projectimg" alt="Project's webpage screenshot" src="${singleProject.image}" />
+          </div>
+          <div>
+            <h2>
+              ${singleProject.name}
+              
+            </h2>
+          </div>
+
+          <div class="btn-group">
+            <ul id="btn1">
+              <li><button class="ruby languages">${singleProject.technologies[0]}</button></li>
+              <li><button class="languages">${singleProject.technologies[1]}</button></li>
+              <li><button class="languages">${singleProject.technologies[2]}</button></li>
+              <li><button class="languages">${singleProject.technologies[3]}</button></li>
+            </ul>
+          </div>
+  
+
+          <div class="divbtn-btn">
+            <button id="project-${singleProject.id}" class="btn-btn see-project">${singleProject.seeProject}</button>
             
-          </h2>
-        </div>
-
-        <div class="btn-group">
-          <ul id="btn1">
-            <li><button class="ruby languages">${singleProject.technologies[0]}</button></li>
-            <li><button class="languages">${singleProject.technologies[1]}</button></li>
-            <li><button class="languages">${singleProject.technologies[2]}</button></li>
-            <li><button class="languages">${singleProject.technologies[3]}</button></li>
-          </ul>
-        </div>
-
-
-        <div class="divbtn-btn">
-          <button id="project-${singleProject.id}" class="btn-btn see-project">${singleProject.seeProject}</button>
-          
-        </div>
+          </div>
 
 
 
-      </section>`;
-});
+        </section>`;
+  });
 
-mainContain.innerHTML = portfolioCode;
+  projectCards.innerHTML = portfolioCode;
+}
+
+portfolioFunc();
 
 const popupBtns = document.querySelectorAll('.see-project');
 const popupViews = document.querySelector('.popup-window');
@@ -195,7 +201,6 @@ function getPopupDetails(event) {
 popupBtns.forEach((popupBtn) => {
   popupBtn.addEventListener('click', getPopupDetails);
 });
-
 /* eslint-disable */
 function closePopup() {
   popupViews.classList.remove('popup');
