@@ -243,14 +243,13 @@ const message = document.getElementById('msg');
 const emailInput = document.getElementById('mail');
 const form = document.getElementById('formId');
 
+const getClientData = JSON.parse(localStorage.getItem('formData'));
 
-
-
-if (getClientData != null) {
+if (getClientData) {
   fullName.value = getClientData.nameData;
   emailInput.value = getClientData.emailData;
   message.value = getClientData.messageData;
-  }
+}
 
 form.addEventListener('input', () => {
   const formData = {
@@ -261,8 +260,6 @@ form.addEventListener('input', () => {
 
   localStorage.setItem('formData', JSON.stringify(formData));
 });
-
-const getClientData = JSON.parse(localStorage.getItem('formData'));
 
 // form validation of lowercase email
 
