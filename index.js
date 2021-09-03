@@ -241,6 +241,7 @@ for (let i = 0; i < navList.length; i += 1) {
 
 const fullName = document.getElementById('name');
 const message = document.getElementById('msg');
+const emailInput = document.getElementById('mail');
 
 function StoreData() {
   const getClientData = JSON.parse(localStorage.getItem('formData'));
