@@ -10,60 +10,60 @@ const homepageContain = document.getElementById('homepage');
 const projectsArray = [
   {
     id: 1,
-    name: 'Multi-Post Stories Gain+Glory',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit ',
-    image: 'img/work1.png',
-    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+    name: 'Classico old-car test ride',
+    description: 'This project is a test-drive booking app for vintange cars , it allows user to make reservations, cancel them as well as add new cars to the collection or delete them!',
+    image: 'img/classico.png',
+    technologies: ['RoR', 'css', 'React', 'jest', 'heruko'],
     seeProject: 'See Project',
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
+    liveLink: 'https://classico-afternoon-heroku.herokuapp.com/',
+    sourceLink: 'https://github.com/redwing555/final-capstone-frontend',
   },
   {
     id: 2,
-    name: 'Multi-Post Stories Gain+Glory',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit',
-    image: 'img/work1.png',
-    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+    name: 'Our Milky way',
+    description: 'This project is a website of a fictive astrophysics conference that I build using HTML / CSS / JavaScript .',
+    image: 'img/capstone.png',
+    technologies: ['css', 'JavaScript', 'html'],
     seeProject: 'See Project',
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
+    liveLink: 'https://redwing555.github.io/Capstone-Project-/',
+    sourceLink: 'https://github.com/redwing555/Capstone-Project-',
   },
   {
     id: 3,
-    name: 'Multi-Post Stories Gain+Glory',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit',
-    image: 'img/work1.png',
-    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+    name: 'BudgetVio',
+    description: 'An app where you can manage your budget: you can manage a list of transactions associated with a certain category, keeping a detailed record of expenses.',
+    image: 'img/budgetvio.png',
+    technologies: ['RoR', 'css', 'html', 'Bootstrap', 'Capybara'],
     seeProject: 'See Project',
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
+    liveLink: 'https://budgetvio-app.herokuapp.com/',
+    sourceLink: 'https://github.com/redwing555/budget-app-',
   },
   {
     id: 4,
-    name: 'Multi-Post Stories Gain+Glory',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit',
-    image: 'img/work1.png',
-    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+    name: 'Covid Tracker',
+    description: 'This Mobile-first App is a Covid data tracking App by Country , the data is from Narrativa API, more interesting functionalities to come ...',
+    image: 'img/covid.png',
+    technologies: ['css', 'Bootstrap', 'Terminal', 'React'],
     seeProject: 'See Project',
     liveLink: 'See Live',
     sourceLink: 'See Source',
   },
   {
     id: 5,
-    name: 'Multi-Post Stories Gain+Glory',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit',
-    image: 'img/work1.png',
-    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+    name: 'Space-X',
+    description: 'The Space-X Project is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
+    image: 'img/spaceX.gif',
+    technologies: ['css', 'React', 'Bootstrap'],
     seeProject: 'See Project',
-    liveLink: 'See Live',
-    sourceLink: 'See Source',
+    liveLink: 'https://spacex-hub.netlify.app/',
+    sourceLink: 'https://github.com/redwing555/SpaceX-Project',
   },
   {
     id: 6,
     name: 'Multi-Post Stories Gain+Glory',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit',
     image: 'img/work1.png',
-    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+    technologies: ['RoR', 'css', 'Bootstrap'],
     seeProject: 'See Project',
     liveLink: 'See Live',
     sourceLink: 'See Source',
@@ -73,6 +73,12 @@ const projectsArray = [
 // looping through projects Array and dynamically displaying them.
 
 let portfolioCode = '';
+function techStack(elem, techListCode = '') {
+  elem.technologies.forEach((technology) => {
+    techListCode += `<li><button class="languages">${technology}</button></li>`;
+  });
+  return techListCode;
+}
 
 projectsArray.forEach((singleProject) => {
   portfolioCode += `<section class="container3">
@@ -81,28 +87,15 @@ projectsArray.forEach((singleProject) => {
         </div>
         <div>
           <h2>
-            ${singleProject.name}
-            
+            ${singleProject.name}   
           </h2>
         </div>
-
         <div class="btn-group">
-          <ul id="btn1">
-            <li><button class="ruby languages">${singleProject.technologies[0]}</button></li>
-            <li><button class="languages">${singleProject.technologies[1]}</button></li>
-            <li><button class="languages">${singleProject.technologies[2]}</button></li>
-            <li><button class="languages">${singleProject.technologies[3]}</button></li>
-          </ul>
+          <ul id="btn1">${techStack(singleProject)}</ul>
         </div>
-
-
         <div class="divbtn-btn">
-          <button id="project-${singleProject.id}" class="btn-btn see-project">${singleProject.seeProject}</button>
-          
+          <button id="${singleProject.id}" class="btn-btn see-project">${singleProject.seeProject}</button> 
         </div>
-
-
-
       </section>`;
 });
 
@@ -112,7 +105,8 @@ const popupBtns = document.querySelectorAll('.see-project');
 const popupViews = document.querySelector('.popup-window');
 
 function getPopupDetails(event) {
-  const Ids = event.target.id;
+  const Ids = parseInt(event.target.id, 10);
+
   let temp = 0;
 
   switch (Ids) {
@@ -161,15 +155,8 @@ function getPopupDetails(event) {
   
              <div class="btn-group">
                <ul class="techno" id="btn1">
-               <li><button class="ruby languages">${projectsArray[temp].technologies[0]}</button></li>
-                <li><button class="languages">${projectsArray[temp].technologies[1]}</button></li>
-                <li><button class="languages">${projectsArray[temp].technologies[2]}</button></li>
-                <li><button class="languages only-desktop">${projectsArray[temp].technologies[3]}</button></li>
-                <li><button class="languages only-desktop">${projectsArray[temp].technologies[4]}</button></li>
-                <li><button class="languages only-desktop">${projectsArray[temp].technologies[5]}</button></li>
-                <li><button class="languages only-desktop">${projectsArray[temp].technologies[6]}</button></li>
-                <li><button class="languages only-desktop">${projectsArray[temp].technologies[7]}</button></li>
-                <li><button class="languages only-desktop">${projectsArray[temp].technologies[8]}</button></li>
+               ${techStack(projectsArray[temp])}
+               
                 
 
                 
@@ -180,8 +167,8 @@ function getPopupDetails(event) {
     
   
              <div class="seelive-seesrc">
-              <button class="btn-btn seelive">${projectsArray[temp].liveLink}&nbsp;<img alt="github" src="img/seelive.png" /> </button>
-              <button class="btn-btn seesource">${projectsArray[temp].sourceLink}&nbsp; <a href="#"><img alt="github" src="img/seesource.png" /></a> </button>
+             <a href="${projectsArray[temp].liveLink}"> <button class="btn-btn seelive" >  live Demo&nbsp; <img alt="github" src="img/seelive.png" /></button></a> 
+              <a href="${projectsArray[temp].sourceLink}"><button class="btn-btn seesource">Source&nbsp; <img alt="github" src="img/seesource.png" /></button></a> 
               
              </div>`;
 
@@ -193,7 +180,9 @@ function getPopupDetails(event) {
 }
 
 popupBtns.forEach((popupBtn) => {
-  popupBtn.addEventListener('click', getPopupDetails);
+  popupBtn.addEventListener('click', (event) => {
+    getPopupDetails(event);
+  });
 });
 
 /* eslint-disable */
